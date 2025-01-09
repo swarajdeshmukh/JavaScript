@@ -200,58 +200,142 @@
 
 // WAP enter 2 numbers and 1 operator from user and print correspoinding 
 
-let num1 = parseInt(prompt("Enter num1:- "));
+// let num1 = parseInt(prompt("Enter num1:- "));
 
-let num2 = parseInt(prompt("Enter num2:- "));
+// let num2 = parseInt(prompt("Enter num2:- "));
 
-let opr = prompt("Enter operator:- ");
+// let opr = prompt("Enter operator:- ");
 
-let result;
+// let result;
 
-if(opr == '+'){
+// if(opr == '+'){
 
-    //error in calculator:-
-    if(num1 === 56 && num2 === 9){
-        console.log(77);
+//     //error in calculator:-
+//     if(num1 === 56 && num2 === 9){
+//         console.log(77);
 
-    }
-    else{
-        result = num1+num2;
-    }
-//    console.log(result);
-}
-else if(opr == '-'){
-    result = num1 - num2;
-    // console.log(result);
-}
-else if(opr == '*'){
+//     }
+//     else{
+//         result = num1+num2;
+//     }
+// //    console.log(result);
+// }
+// else if(opr == '-'){
+//     result = num1 - num2;
+//     // console.log(result);
+// }
+// else if(opr == '*'){
 
-    //error in calculator:-
-    if(num1 === 45 && num2 === 3){
-        console.log(555);
+//     //error in calculator:-
+//     if(num1 === 45 && num2 === 3){
+//         console.log(555);
 
-    }
-    else{
-        result = num1*num2;
-    }
+//     }
+//     else{
+//         result = num1*num2;
+//     }
     
-    // console.log(result);
-}
-else if(opr == '/'){
+//     // console.log(result);
+// }
+// else if(opr == '/'){
 
-    //error in calculator:-
-    if(num1 === 56 && num2 === 6){
-        console.log(4);
+//     //error in calculator:-
+//     if(num1 === 56 && num2 === 6){
+//         console.log(4);
 
-    }
-    else{
-        result = num1/num2;
-    }
+//     }
+//     else{
+//         result = num1/num2;
+//     }
     
-    // console.log(result);
+//     // console.log(result);
+// }
+// else{
+//     alert("Enter valid opr!");
+// }
+
+// console.log(result);
+
+
+// Type of Function
+// 1. No argument no return
+// pallindrome means  the srting givin  is 121 after revers if it is equal to = 121 is pallindrome
+
+// function pallindrome(){
+//   let num = parseInt(prompt("Enter number"));
+//   let result = 0;
+//   let rem;
+//   let temp = num;
+
+//   while(num != 0){
+//     rem = parseInt( num % 10);
+//     result = parseInt(result * 10 + rem);
+//     num = parseInt(num / 10);
+//   }
+//   console.log(result);
+
+//   if(temp == result){
+//     console.log("pallindrome.");
+//   }
+//   else{
+//     console.log("not pallindrom");
+//   }
+
+// }
+// pallindrome();
+
+// 2. With argument  but no return
+
+// function pallindrom(num){
+
+//   let result = 0;
+//   let rem;
+//   let temp = num;
+
+//   while(num != 0){
+//     rem = parseInt( num % 10); 
+//     result = parseInt(result*10+rem);
+//     num = parseInt(num/10);
+//   }
+//   console.log(result);
+
+//   if(temp == result){
+//     console.log("yes");
+//   }else{
+//     console.log("no");
+//   }
+
+// }
+
+// let num = parseInt(prompt("Enter a number"));
+// pallindrom(num);
+
+// 3. With argument and return
+
+function pallindrome(num){
+
+  let result = 0;
+  let rem;
+  let temp = num;
+
+  while(num != 0){
+    rem = parseInt(num % 10);
+    result = parseInt(result * 10 + rem);
+    num = parseInt(num/10);
+  }
+  if(temp == result){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+let num = parseInt(prompt("Enter a number"));
+let ispal = pallindrome(num); 
+if(ispal == true){
+  console.log("yes");
 }
 else{
-    alert("Enter valid opr!");
+  console.log("no");
 }
 
-console.log(result);
