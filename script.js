@@ -312,30 +312,30 @@
 
 // 3. With argument and return
 
-function pallindrome(num){
+// function pallindrome(num){
 
-  let result = 0;
-  let rem;
-  let temp = num;
+//   let result = 0;
+//   let rem;
+//   let temp = num;
 
-  while(num != 0){
-    rem = parseInt(num % 10);
-    result = parseInt(result * 10 + rem);
-    num = parseInt(num/10);
-  }
-  if(temp == result){
-    return true;
-  }else{
-    return false;
-  }
-}
+//   while(num != 0){
+//     rem = parseInt(num % 10);
+//     result = parseInt(result * 10 + rem);
+//     num = parseInt(num/10);
+//   }
+//   if(temp == result){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
 
-let num = parseInt(prompt("Enter a number"));
-let ispal = pallindrome(num); 
-if(ispal == true){
-  console.log("yes");
-}
-else{
-  console.log("no");
-}
+// // let num = parseInt(prompt("Enter a number"));
+// let ispal = pallindrome(num); 
+// if(ispal == true){
+//   console.log("yes");
+// }
+// else{
+//   console.log("no");
+// }
 
